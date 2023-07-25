@@ -18,6 +18,6 @@
 ![Screenshot (35)](https://github.com/AvhikBiswas/fasta-food/assets/82642119/eafb0a40-b8e5-4591-82f0-fec126b83afc)
 
 
-## Restura
+## Resturant
 
 ![Screenshot (34)](https://github.com/AvhikBiswas/fasta-food/assets/82642119/37cf3726-d28a-4600-a791-0f9b1b4cf94c)
