@@ -1,0 +1,26 @@
+{
+  "name": "namasta-react",
+  "version": "1.0.0",
+  "description": "",
+  "type": "module",
+  "source": "index.html",
+  "scripts": {
+    "cleanup": "rmdir/q/s .parcel-cache dist",
+    "start": "parcel"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "node": "^19.8.1",
+    "parcel": "^2.8.3",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-router-dom": "^6.10.0"
+  },
+  "devDependencies": {
+    "assert": "^2.0.0",
+    "console-browserify": "^1.2.0",
+    "process": "^0.11.10",
+    "util": "^0.12.5"
+  }
+}

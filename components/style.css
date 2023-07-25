@@ -1,0 +1,257 @@
+/* Reset styles */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+  }
+  a {
+    text-decoration: none;
+  }
+  
+  body {
+    background-color: #FCE4EC;
+  }
+  
+  /* Header */
+  .header {
+    background-color: #F0AB8D;
+    height: 7rem;
+  }
+  
+  /* Navigation */
+  ul {
+    display: flex;
+    flex-direction: row-reverse;
+  }
+  
+  li {
+    display: inline;
+    margin: 2px;
+    margin-right: 15px;
+    margin-top: 2rem;
+    font-size: large;
+    width: 7rem;
+    height: 2rem;
+    text-align: center;
+    justify-content: center;
+    padding-top: 5px;
+    border: 1px solid rgb(100, 11, 11);
+    border-radius: 8px;
+  }
+  
+  /* Logo */
+  .logo {
+    width: 15rem;
+    position: absolute;
+    margin: 8px 0 0 70px;
+    border-radius: 50%;
+  }
+  
+  /* Search Bar */
+  .search-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 11rem;
+  }
+  
+  .search {
+    width: 27rem;
+    height: 2.5rem;
+    border-radius: 0;
+    border: 1px solid;
+    border-right: 0;
+    background-color: white;
+    outline: 0;
+  }
+  
+  .btn {
+    width: 9rem;
+    height: 2.5rem;
+    border-radius: 0;
+    border: 1px solid;
+    border-left: 0px;
+    margin-right: 9px;
+    outline: 0;
+    cursor: pointer;
+  }
+  
+  /* Restaurant Section */
+  .allresurent, .shimmer-container {
+    width: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 7rem;
+  }
+  
+  /* Individual Restaurant Card */
+  .cart {
+    width: 15rem;
+    border-radius: 5px;
+    padding: 10px;
+    margin: 20px;
+    cursor: pointer;
+    overflow: hidden;   
+  }
+  
+  .cart:hover {
+    box-shadow: -1px 5px 10px 5px rgba(42, 42, 42, 0.2);
+  }
+  
+  .cart-image {
+    width: 13.5rem;
+    margin-left: 1.5px;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  /* Hero Section */
+  .hero-section {
+    background-color: rgb(23, 26, 41);
+    height: 20rem;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  /* Carousel */
+  .carousel {
+    overflow: hidden;
+    display: flex;
+    margin: auto;
+  }
+  
+  .carousel-inner {
+    display: inline;
+    display: flex;
+    animation: carouselAnimation 5s linear infinite;
+  }
+  
+  .carousel-img {
+    width: 16rem;
+    height: auto;
+    margin: 0 1rem; /* Adjust horizontal spacing between carousel images */
+  }
+  
+  /* Shimmer Animation */
+  .shine {
+    background: #f6f7f8;
+    background-image: linear-gradient(to right, #f6f7f8 0%, #edeef1 20%, #f6f7f8 40%, #f6f7f8 100%);
+    background-repeat: no-repeat;
+    background-size: 800px 200px; 
+    display: inline-block;
+    position: relative; 
+    animation-duration: 1s;
+    animation-fill-mode: forwards; 
+    animation-iteration-count: infinite;
+    animation-name: placeholderShimmer;
+    animation-timing-function: linear;
+  }
+  
+  @keyframes placeholderShimmer {
+    0% {
+      background-position: -490px 0;
+    }
+    100% {
+      background-position: 468px 0; 
+    }
+  }
+  
+  /* Shimmer Placeholder Elements */
+  .shimer {
+    width: 15rem;
+    border-radius: 5px;
+    height: 14rem;
+    padding: 10px;
+    margin: 20px;
+    background-color: #ffffff;
+    border: 2px solid #fff7f8;
+  }
+  
+  .shimer-img {
+    width: 13.5rem;
+    height: 8rem;
+    background-color: #eef0f5;
+    margin: 0 auto;
+    animation-delay: 5ms;
+  }
+  
+  .shimer-text {
+    margin-top: 5px;
+    width: 6rem;
+    height: 1rem;
+    background-color: #eef0f5;
+    border-radius: 10px;
+  }
+  
+  .shimer-text-big {
+    margin-top: 5px;
+    width: 13rem;
+    height: 2rem;
+    background-color: #eef0f5;
+    border-radius: 10px;
+  }
+  
+  /* Responsive Styles */
+  
+  /* For smaller screens (up to 600px) */
+  @media screen and (max-width: 600px) {
+    .header {
+      height: 5rem;
+    }
+  
+    .search-container {
+      margin-top: 8rem;
+    }
+  
+    .search {
+      width: 20rem;
+    }
+  
+    .carousel-img {
+      width: 12rem;
+    }
+  
+    .shimer-img {
+      width: 10rem;
+      height: 6rem;
+    }
+  
+    .shimer-text, .shimer-text-big {
+      width: 4rem;
+    }
+  }
+  
+  /* For medium screens (601px to 900px) */
+  @media screen and (min-width: 601px) and (max-width: 900px) {
+    .header {
+      height: 6rem;
+    }
+  
+    .search-container {
+      margin-top: 9rem;
+    }
+  
+    .search {
+      width: 24rem;
+    }
+  
+    .carousel-img {
+      width: 14rem;
+    }
+  
+    .shimer-img {
+      width: 11rem;
+      height: 7rem;
+    }
+  
+    .shimer-text, .shimer-text-big {
+      width: 5rem;
+    }
+  }
+  
+  /* For larger screens (901px and above) */
+  @media screen and (min-width: 901px) {
+    /* Keep the original styles */
+  }
+  
